@@ -138,3 +138,40 @@ $ ls -l /tmp/venom
 -r-xr-xr-x 1 mickael mickael 10712 Jan  8 09:25 /tmp/venom
 
 ```
+# Debian
+
+```ps``` is provided by ```procps``` package.
+
+# Alpine
+
+## Package management
+
+apk search $pkgname
+apk add $pkgname
+
+## Configuration and stuff
+
+Configuration tools are in a package that is not installed by default.
+
+```sh
+apk add alpine-conf
+setup-timezone -z Europe/Paris
+```
+
+## App host
+
+apk add apache2-php5
+apk add php5-mysqli
+
+## DB host
+
+apk add mariadb mariadb-server-utils
+
+## Symphony host
+
+apk add php5 # For CLI composer tools
+<!-- TODO: persistent volume -->
+
+## Native dev machine
+
+apk add clang alpine-sdk build-base git vim
