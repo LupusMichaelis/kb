@@ -73,6 +73,7 @@ References:
     - [Result.Extra](https://package.elm-lang.org/packages/elm-community/result-extra/latest/)
     - [UndoList](https://package.elm-lang.org/packages/elm-community/undo-redo/latest/)
       Helps implementing Undo/Redo mechanism through the Msg system.
+    - [Test me! test me!](https://package.elm-lang.org/packages/deadfoxygrandpa/elm-test/2.0.0/)
     - []()
 
 * community extras
