@@ -5,6 +5,21 @@ Global state (a registry of object).
 No Model, you have to [choose](https://reactjs.org/community/model-management.html),
 [maybe](https://hackernoon.com/introducing-react-axiom-84bf37a50adb)?
 
+# /!\ BEWARE! ACHTUNG! /!\
+
+React.Component.setState doesn't set the state, it updates it!
+
+```
+let mange="c'est", mon="n'importe", caca="quoi";
+assert(this.state === {});
+this.setState({mange})
+assert(this.state === {mange: "c'est"});
+this.setState({mon})
+assert(this.state === {mange: "c'est", mon: "n'importe"});
+this.setState({caca})
+assert(this.state === {mange: "c'est", mon: "n'importe", caca: "quoi"});
+```
+
 # Source tree layout
 
 As React doesn't enforce any structure, there is choice to be made. That's a big annoying topic,
