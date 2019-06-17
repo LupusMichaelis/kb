@@ -122,3 +122,28 @@ export class View
     }
 }
 ```
+
+# Resources
+
+- [A throughful description of React logic](https://overreacted.io/react-as-a-ui-runtime/)
+  It explains well why key attribute is required on elements part of an iterable.
+
+# Tooling
+
+## Tools within
+
+Package | Description
+--- | ---
+jest | Unit test
+redux | Management of app state
+eslint | A code linter for TypeScript
+storybook | An environment to test components and document them
+enzyme | Test React component output (DOM, styles, etc)
+
+## Tools without
+
+Tool | Description
+--- | ---
+Selenium | In browser functional testing
+React Developer tool | Plugin for FF or Google Chrome
+Redux Developer tool |Plugin for FF or Google Chrome
