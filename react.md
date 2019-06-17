@@ -40,6 +40,17 @@ and there's no definitive answer. Here are some interesting pieces about it:
 
 See machine.git
 
+Install Bulma:
+```sh
+npm i --save react-bulma-components
+# npm i --save-dev @types/react-bulma-components
+# Doesn't exist yet, but we can work around:
+echo "declare module 'react-bulma-components'" \
+    > node_modules/react-bulma-components/index.d.ts
+echo "declare module 'react-bulma-components/full'" \
+    > node_modules/react-bulma-components/full/index.d.ts
+```
+
 ## Vim
 
 ```sh
