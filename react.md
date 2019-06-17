@@ -5,6 +5,11 @@ Global state (a registry of object).
 No Model, you have to [choose](https://reactjs.org/community/model-management.html),
 [maybe](https://hackernoon.com/introducing-react-axiom-84bf37a50adb)?
 
+# Testing
+
+[Testing Library](https://testing-library.com/)
+
+
 # /!\ BEWARE! ACHTUNG! /!\
 
 React.Component.setState doesn't set the state, it updates it!
