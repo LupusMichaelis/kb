@@ -5,11 +5,6 @@ Global state (a registry of object).
 No Model, you have to [choose](https://reactjs.org/community/model-management.html),
 [maybe](https://hackernoon.com/introducing-react-axiom-84bf37a50adb)?
 
-# Testing
-
-[Testing Library](https://testing-library.com/)
-
-
 # /!\ BEWARE! ACHTUNG! /!\
 
 React.Component.setState doesn't set the state, it updates it!
@@ -23,8 +18,9 @@ this.setState({mon})
 assert(this.state === {mange: "c'est", mon: "n'importe"});
 this.setState({caca})
 assert(this.state === {mange: "c'est", mon: "n'importe", caca: "quoi"});
+this.setState({mange: "c'était"})
+assert(this.state === {mange: "c'était", mon: "n'importe", caca: "quoi"});
 ```
-
 # Source tree layout
 
 As React doesn't enforce any structure, there is choice to be made. That's a big annoying topic,
@@ -33,7 +29,7 @@ and there's no definitive answer. Here are some interesting pieces about it:
 - [1](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1)
 - [2](https://hackernoon.com/the-100-correct-way-to-structure-a-react-app-or-why-theres-no-such-thing-3ede534ef1ed)
 - [3](https://daveceddia.com/react-project-structure/)
-- [4](https://marmelab.com/blog/2015/12/17/react-directory-structure.html)
+- [organize by domain](https://marmelab.com/blog/2015/12/17/react-directory-structure.html)
 - [5](https://blog.bitsrc.io/structuring-a-react-project-a-definitive-guide-ac9a754df5eb)
 
 # Install
@@ -70,12 +66,17 @@ au BufRead,BufNewFile *.jsx set filetype=javascript.jsx
 au BufRead,BufNewFile *.tsx set filetype=typescript.jsx
 ```
 
+# Testing
+
+[Testing Library](https://testing-library.com/)
+
+
 ## Debug tool
 
 https://reactjs.org/blog/2015/09/02/new-react-developer-tools.html#installation
 
 
-# React packages
+# Noticeable React packages
 
 Name | Description
 --- | ---
@@ -96,11 +97,13 @@ interface State
 {
 }
 
+// Would be a component
 export function simpleView(props: any): JSX.Element
 {
     return <div>Some content</div>;
 }
 
+// Would be a container
 export class View
     extends React.Component<Entity.Props, State>
 {
@@ -127,6 +130,16 @@ export class View
 
 - [A throughful description of React logic](https://overreacted.io/react-as-a-ui-runtime/)
   It explains well why key attribute is required on elements part of an iterable.
+
+## Hooks
+
+- Describe how to use [React hooks](https://medium.com/@jrwebdev/react-hooks-in-typescript-88fce7001d0d)
+  in a function first citizen TS React way to develop components. The [official React hook
+  introductory page](https://reactjs.org/docs/hooks-intro.html).
+- Linter for [React hooks](https://reactjs.org/docs/hooks-rules.html)
+  `npm install eslint-plugin-react-hooks --save-dev`
+- [FAQ](https://reactjs.org/docs/hooks-faq.html)
+- use of effect to [fetch data](https://www.robinwieruch.de/react-hooks-fetch-data/)
 
 # Tooling
 
