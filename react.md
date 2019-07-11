@@ -130,6 +130,7 @@ export class View
 
 - [A throughful description of React logic](https://overreacted.io/react-as-a-ui-runtime/)
   It explains well why key attribute is required on elements part of an iterable.
+- [Fixed size viewport optimisation](https://react-window.now.sh/#/examples/list/fixed-size)
 
 ## Hooks
 
@@ -140,6 +141,8 @@ export class View
   `npm install eslint-plugin-react-hooks --save-dev`
 - [FAQ](https://reactjs.org/docs/hooks-faq.html)
 - use of effect to [fetch data](https://www.robinwieruch.de/react-hooks-fetch-data/)
+- [Some examples](https://blog.logrocket.com/react-hooks-cheat-sheet-unlock-solutions-to-common-problems-af4caf699e70/)
+- [Impl examples](https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/)
 
 # Tooling
 
