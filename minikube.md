@@ -3,6 +3,8 @@
 Install:
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 - [minikube](https://github.com/kubernetes/minikube#other-ways-to-install)
+- [minikube with KVM](https://kubernetes.io/docs/tasks/tools/install-minikube/)
+- [minikube on Debian](https://medium.com/@devlin.trace/installing-minikube-on-debian-9-stretch-961d2cd52ce8)
 
 ```sh
 apt install libvirt-daemon virtinst
