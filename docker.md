@@ -138,6 +138,7 @@ $ ls -l /tmp/venom
 -r-xr-xr-x 1 mickael mickael 10712 Jan  8 09:25 /tmp/venom
 
 ```
+<<<<<<< HEAD
 # Debian
 
 ```ps``` is provided by ```procps``` package.
@@ -175,3 +176,22 @@ apk add php5 # For CLI composer tools
 ## Native dev machine
 
 apk add clang alpine-sdk build-base git vim
+
+# Traps
+
+## UID
+
+An issue while building images, is to map the docker UID to an existing UID, and
+especially to the user's UID. If most people are using the first non-privileged user
+created in their system, `1000:1000`, it not the case for everyone.
+
+So you could be tempted to use ${UID} in your Dockerfile or Docker Compose file, to set up
+the UID/GID. Unfortunatelly, those are shell variables, and will not be readily avialable
+in your configuration files.
+
+A trick is to make it available before running any build or run :
+
+```sh
+export UID
+export GID
+```
