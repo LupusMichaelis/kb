@@ -143,6 +143,8 @@ export class View
 - use of effect to [fetch data](https://www.robinwieruch.de/react-hooks-fetch-data/)
 - [Some examples](https://blog.logrocket.com/react-hooks-cheat-sheet-unlock-solutions-to-common-problems-af4caf699e70/)
 - [Impl examples](https://www.netlify.com/blog/2019/03/11/deep-dive-how-do-react-hooks-really-work/)
+- [Testing library](https://github.com/testing-library/react-testing-library)
+  `npm i -D @testing-library/react`
 
 # Tooling
 
