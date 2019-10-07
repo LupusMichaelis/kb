@@ -252,3 +252,7 @@ Some additional framework worth exploring:
 
 - Ginkgo (BDD)
 - Gomega (Assertions)
+
+# Network
+
+[HTTP/2](https://posener.github.io/http2/)
