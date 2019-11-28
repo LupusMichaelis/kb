@@ -3,14 +3,19 @@
 ## Environment
 
 ```
-Go doesn't support environment variables GOROOT and GOPATH to contain a tilde `~`.
+# Go doesn't support environment variables GOROOT and GOPATH to contain a tilde `~`.
+
+mkdir -p \
+	~/.local/go-lang-root/src \
+	~/.local/go-path/bin
 
 cat >> ~/.environ
 export GOARCH="amd64"
-export GOBIN="/home/mickael/.local/go-path/bin"
-export GOPATH="/home/mickael/.local/go-path"
-export GOROOT="/home/mickael/.local/go-lang-root"
-export PATH="$GOROOT/bin:$GOBIN:~/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+export GOBIN="$HOME/.local/go-path/bin"
+export GOPATH="$HOME/.local/go-path"
+export PATH="$GOROOT/bin:$GOBIN:$PATH"
+
+#export GOROOT="$HOME/.local/go-lang-root"
 ```
 
 ```go
