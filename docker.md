@@ -138,7 +138,6 @@ $ ls -l /tmp/venom
 -r-xr-xr-x 1 mickael mickael 10712 Jan  8 09:25 /tmp/venom
 
 ```
-<<<<<<< HEAD
 # Debian
 
 ```ps``` is provided by ```procps``` package.
@@ -194,4 +193,10 @@ A trick is to make it available before running any build or run :
 ```sh
 export UID
 export GID
+```
+
+# Sign
+
+```
+apt install gnupg2 pass
 ```
